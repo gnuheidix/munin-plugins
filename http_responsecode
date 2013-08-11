@@ -55,7 +55,7 @@ if [ "$1" = "config" ]; then
 	siteid=`echo $site | sed 's/[^a-z]*//g'`
 	echo "$siteid.label $site"
 	echo "$siteid.info HTTP response code statistics for $site."
-	echo "$siteid.critical 1:399";
+	echo "$siteid.critical 99:399";
     done
     exit 0
 fi
